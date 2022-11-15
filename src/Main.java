@@ -6,11 +6,13 @@ public class Main {
         int amountPayments = 0;
         int[] arr = generateRandomArray();
 
-        int minInc = arr[0];
-        int maxInc = arr[0];
+        double minInc = arr[0];
+        double maxInc = arr[0];
+        double middle = arr[0];
         for (int i = 0; i <= arr.length - 1; i++) {
             System.out.println(i + " " + arr[i]);
             amountPayments += arr[i];
+            middle = amountPayments/30;
             if (minInc > arr[i]) {
                 minInc = arr[i];}
             else if (maxInc < arr[i]) {
@@ -21,6 +23,7 @@ public class Main {
         System.out.println("Сумма всех выплат за месяц: " + amountPayments);
         System.out.println("Минимальная сумма трат за день составила " + minInc + " рублей." +
                 "Максимальная сумма трат за день составила " + maxInc + " рублей.");
+        System.out.println("Средняя сумма трат за месяц составила " + middle + " рублей");
 
     }
 
