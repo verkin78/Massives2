@@ -24,6 +24,10 @@ public class Main {
         System.out.println("Минимальная сумма трат за день составила " + minInc + " рублей." +
                 "Максимальная сумма трат за день составила " + maxInc + " рублей.");
         System.out.println("Средняя сумма трат за месяц составила " + middle + " рублей");
+        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int i = reverseFullName.length - 1; i >= 0; i--) {
+            System.out.print(reverseFullName[i]);
+        }
 
     }
 
@@ -37,6 +41,9 @@ public class Main {
         }
         return arr;
     }
+
+
+
 }
 
 
